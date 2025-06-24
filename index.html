@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental App</title>
+  <link rel="stylesheet" href="style.css" />
+ <script src="script.js" defer></script>
+<body>
+  <div class="container">
+    <h1>Car Rental Application</h1>
+
+    <form id="rentalForm">
+      <h2>Select Cars</h2>
+      <div class="cars">
+       
+        <div class="car">
+          <img src="asset\AVANZA.webp" alt="Toyota Avanza" />
+          <h3>Toyota Avanza</h3>
+          <p>Rp 500.000 / day</p>
+          <input type="checkbox" class="car-checkbox" data-name="Toyota Avanza" data-price="500000" />
+          <label>Start Date: <input type="date" class="start-date" /></label>
+          <label>Duration (days): <input type="number" min="1" class="duration" /></label>
+        </div>
+        <div class="car">
+          <img src="asset\INNOVA.jpg" alt="Toyota Kijang Innova" />
+          <h3>Toyota Innova</h3>
+          <p>Rp 700.000 / day</p>
+          <input type="checkbox" class="car-checkbox" data-name="Toyota Innova" data-price="700000" />
+          <label>Start Date: <input type="date" class="start-date" /></label>
+          <label>Duration (days): <input type="number" min="1" class="duration" /></label>
+        </div>
+        <div class="car">
+          <img src="asset\HRV.webp" alt="Honda HRV" />
+          <h3>Honda HRV</h3>
+          <p>Rp 600.000 / day</p>
+          <input type="checkbox" class="car-checkbox" data-name="Honda HRV" data-price="600000" />
+          <label>Start Date: <input type="date" class="start-date" /></label>
+          <label>Duration (days): <input type="number" min="1" class="duration" /></label>
+        </div>
+        <div class="car">
+          <img src="asset\SIGRA.jpeg" alt="Daihatsu Sigra" />
+          <h3>Daihatsu Sigra</h3>
+          <p>Rp 450.000 / day</p>
+          <input type="checkbox" class="car-checkbox" data-name="Daihatsu Sigra" data-price="450000" />
+          <label>Start Date: <input type="date" class="start-date" /></label>
+          <label>Duration (days): <input type="number" min="1" class="duration" /></label>
+        </div>
+      </div>
+
+      <h2>Customer Info</h2>
+      <label>Name: <input type="text" id="customerName" required /></label>
+      <button type="button" id="calculateBtn">Calculate Total</button>
+      <button type="button" id="saveBtn">Save Booking</button>
+    </form>
+
+    <div id="summary"></div>
+
+    <h2>Bookings</h2>
+    <ul id="bookingsList"></ul>
+  </div>
+
+
+</body>
+</html>
